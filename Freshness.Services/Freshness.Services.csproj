@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.0" />
+    <PackageReference Include="Telegram.Bot" Version="17.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Freshness.Common.csproj" />
+    <ProjectReference Include="..\Freshness.DAL\Freshness.DAL.csproj" />
+    <ProjectReference Include="..\Freshness.Domain\Freshness.Domain.csproj" />
+    <ProjectReference Include="..\Freshness.Models\Freshness.Models.csproj" />
+  </ItemGroup>
+
+</Project>
